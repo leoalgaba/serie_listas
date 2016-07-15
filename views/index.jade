@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="es", ng-app='app')
+head
+	meta(charset="UTF-8")
+	title Series
+	link(rel='stylesheet', href='/css/bootstrap.css')
+body(ng-controller="serieCtrl")
+	.container
+		h1(align='center') Listado de series favoritas
+		fieldset
+			Legend Series por temporadas y capitulos
+			label Titulos
+			select(ng-model="titulo")
+				option(ng-repeat='t in titulos', value='{{t.cod_tit}}') {{t.titulo}}
+			label Temporadas
+			select(ng-model="temporada")
+				option(ng-repeat='t in temporadas | filter:{cod_tit:titulo}:true', value='{{t.cod_tem}}') {{t.temporada}}
+			label Capitulos
+			select(ng-model="capitulo")
+				option(ng-repeat='c in capitulos | filter:{cod_tem:temporada}:true', value='{{c.cod_cap}}') {{c.Capitulo}}
+	script(src='/js/angular.js')
+	script(src='/js/scripts.js')
+
+

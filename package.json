@@ -1,0 +1,16 @@
+{
+  "name": "serie_listas",
+  "version": "1.0.0",
+  "description": "Listas desplegables de series con temporadas y capitulos",
+  "main": "nodemon app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leocadio Cruz Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "mongodb": "^2.2.0"
+  }
+}
