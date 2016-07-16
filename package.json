@@ -8,6 +8,7 @@
   },
   "author": "Leocadio Cruz Garcia",
   "license": "ISC",
+  "url": "https://github.com/leoalgaba/serie_listas/",
   "dependencies": {
     "express": "^4.14.0",
     "jade": "^1.11.0",
