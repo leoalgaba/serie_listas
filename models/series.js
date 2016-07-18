@@ -1,6 +1,6 @@
 var MongoClient = require('mongodb').MongoClient;
 
-MongoClient.connect('mongodb://localhost/series', function (err,db) {
+MongoClient.connect('mongodb://leo:leo1970@ds042698.mlab.com:42698/series', function (err,db) {
 	if (err) throw err;
 	exports.cargarTitulo = function (data) {
 		db.collection ('titulos')
